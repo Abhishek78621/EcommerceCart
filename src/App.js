@@ -8,9 +8,9 @@ import Homeproducts from "./Components/Homeproducts";
 
 function App() {
   return (
-    <div className="App" baseName="EcommerceCart">
+    <div className="App">
 
-    <Router>
+    <Router baseName="/EcommerceCart">
       
         <Routes>
           <Route path='/EcommerceCart' element={<><Header/><Home/></>}></Route>
