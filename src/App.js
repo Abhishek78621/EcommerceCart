@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="App">
 
-    <Router baseName="/EcommerceCart">
+    <Router>
       
         <Routes>
-          <Route path='/EcommerceCart' element={<><Header/><Home/></>}></Route>
+          <Route path='/' element={<><Header/><Home/></>}></Route>
           <Route path='/home' element={<><Header/><Home/></>}></Route>
           <Route path="/homeproducts" element={<><Header/><Homeproducts/></>}></Route>
           <Route path='/checkout' element={<><Header/><Checkout/></>}></Route>
