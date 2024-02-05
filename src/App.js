@@ -2,7 +2,7 @@
 //import Products from "./Components/Products";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
-import {BrowserRouter as  Router,Routes,Route} from "react-router-dom";
+import {BrowserRouter as  BrowserRouter,Routes,Route} from "react-router-dom";
 import Checkout from "./Components/Checkout";
 import Homeproducts from "./Components/Homeproducts";
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
 
-    <Router>
+    <BrowserRouter>
       
         <Routes>
           <Route path='/' element={<><Header/><Home/></>}></Route>
@@ -19,7 +19,7 @@ function App() {
           <Route path='/checkout' element={<><Header/><Checkout/></>}></Route>
           </Routes>
        
-      </Router>
+      </BrowserRouter>
  
     </div>
   );
